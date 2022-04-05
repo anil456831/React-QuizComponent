@@ -5,12 +5,11 @@ class Quiz extends Component {
   constructor(props){
     super(props)
     this.state = {quiz_position:1}
-    
   }
 	render() {
     return (
       <div>
-        <QuizQuestion quiz_position={quizData.quiz_questions[this.state.quiz_position - 1]}/>
+        <div className="QuizQuestion">{quizData.quiz_questions[0].instruction_text}</div>
       </div>
     )
   }
